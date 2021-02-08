@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getCharacters } from '../services/getCharacters';
+import Character from './Character';
 
 export default function CharacterList() {
-
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
@@ -12,10 +12,15 @@ export default function CharacterList() {
 
   console.log(characters);
 
+  const characterElements = characters.map(character => (
+    <li key={character.id}>
+      <Character {...character} />
+    </li>
+  ));
 
   return (
-    <div>
-            Character List
-    </div>
+    <ul>
+      {characterElements}
+    </ul>
   );
 }
