@@ -1,0 +1,11 @@
+.CharacterList {
+    background-color: lightblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    list-style: none;
+
+    border-radius: 10px;
+}
