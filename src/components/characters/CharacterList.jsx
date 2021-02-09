@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { getCharacters } from '../services/getCharacters';
 import Character from './Character';
 
@@ -18,13 +19,17 @@ export default function CharacterList() {
   console.log(loading);
 
   const characterElements = characters.map(character => (
-    <li key={character.id}>
-      {/* {character.name} */}
-      <Character {...character} />
-    </li>
+    <Link
+      key={character.id}
+      to={`character/${character.id}`}
+    >
+      <li>
+        <Character {...character} />
+      </li>
+    </Link>
   ));
 
-  if(loading) return <h1>Loading...please wait...</h1>;
+  if(loading) return <h2>Loading...please wait...</h2>;
   return (
     <ul>
       {characterElements}

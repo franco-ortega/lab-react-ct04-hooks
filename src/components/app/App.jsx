@@ -5,15 +5,24 @@ import {
   Switch
 } from 'react-router-dom';
 import CharacterList from '../characters/CharacterList';
-import CharacterDetails from '../characters/CharacterDetails';
+import OneCharacter from '../characters/OneCharacter';
 
 export default function App() {
+
   return (
     <Router>
       <h1>Animal Crossing Characters</h1>
       <Switch>
-        <Route exact path="/" component={CharacterList} />
-        <Route exact path="/character/:id" component={CharacterDetails} />
+        <Route
+          exact path="/"
+          component={CharacterList}
+          // {...characters}
+        />
+        <Route
+          exact path="/character/:id"
+          component={OneCharacter}
+          // {...characters}
+        />
       </Switch>
     </ Router>
   );
