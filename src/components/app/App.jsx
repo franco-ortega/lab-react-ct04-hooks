@@ -16,12 +16,10 @@ export default function App() {
         <Route
           exact path="/"
           component={CharacterList}
-          // {...characters}
         />
         <Route
           exact path="/character/:id"
           component={OneCharacter}
-          // {...characters}
         />
       </Switch>
     </ Router>

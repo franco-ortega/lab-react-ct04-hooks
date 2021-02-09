@@ -15,9 +15,6 @@ export default function CharacterList() {
       });
   }, []);
 
-  console.log(characters);
-  console.log(loading);
-
   const characterElements = characters.map(character => (
     <Link
       key={character.id}
@@ -29,10 +26,6 @@ export default function CharacterList() {
     </Link>
   ));
 
-  if(loading) return <h2>Loading...please wait...</h2>;
-  return (
-    <ul>
-      {characterElements}
-    </ul>
-  );
+  if(loading) return <h2>Loading</h2>;
+  return <ul data-testid="characters">{characterElements}</ul>;
 }

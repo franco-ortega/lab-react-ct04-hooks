@@ -5,8 +5,8 @@ exports[`App component renders App 1`] = `
   <h1>
     Animal Crossing Characters
   </h1>
-  <div>
-    Character List
-  </div>
+  <h2>
+    Loading
+  </h2>
 </DocumentFragment>
 `;

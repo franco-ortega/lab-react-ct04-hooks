@@ -16,9 +16,9 @@ export default function CharacterList({ match }) {
       });
   }, []);
 
-  if(loading) return <h2>Loading...please wait...</h2>;
+  if(loading) return <h2>Loading</h2>;
   return (
-    <ul>
+    <ul data-testid="character">
       <CharacterDetails {...character} />
     </ul>
   );

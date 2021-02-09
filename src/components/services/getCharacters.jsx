@@ -5,14 +5,6 @@ export const getCharacters = async() => {
       id: character._id,
       name: character.name,
       japaneseName: character.japaneseName,
-      image: character.image,
-      quote: character.quote,
-      personality: character.personality,
-      species: character.species,
-      skill: character.skill,
-      goal: character.goal,
-      roast: character.coffee.roast,
-      milk: character.coffee.milk,
-      sugar: character.coffee.sugar
+      image: character.image
     })));
 };

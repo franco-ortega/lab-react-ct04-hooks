@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Character({ name, image }) {
+export default function Character({ name, japaneseName, image }) {
   return (
     <div
       style={
@@ -11,6 +11,9 @@ export default function Character({ name, image }) {
       <p>
         {name}
       </p>
+      <p>
+        {japaneseName}
+      </p>
       <img src={image} alt={name} style={{ height: '100px' }} />
     </div>
   );
@@ -18,5 +21,6 @@ export default function Character({ name, image }) {
 
 Character.propTypes = {
   name: PropTypes.string.isRequired,
+  japaneseName: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired
 };
