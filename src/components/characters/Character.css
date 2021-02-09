@@ -1,0 +1,7 @@
+.Character {
+    border-radius: 10px;
+    border: 'solid';
+    margin: '5px';
+    padding: '5px';
+    width: 'fit-content'
+}

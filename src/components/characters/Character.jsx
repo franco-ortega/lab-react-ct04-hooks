@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Character.css';
 
 export default function Character({ name, japaneseName, image }) {
   return (
     <div
+      className={styles.Character}
       style={
         { border: 'solid', margin: '5px', padding: '5px', width: 'fit-content' }
       }

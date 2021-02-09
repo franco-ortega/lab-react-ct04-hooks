@@ -3,6 +3,7 @@
 exports[`Character component renders Character 1`] = `
 <DocumentFragment>
   <div
+    class="Character"
     style="border: solid; margin: 5px; padding: 5px;"
   >
     <p>

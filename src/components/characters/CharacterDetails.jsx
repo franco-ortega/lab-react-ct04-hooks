@@ -40,7 +40,7 @@ CharacterDetails.propTypes = {
   species: PropTypes.string.isRequired,
   skill: PropTypes.string.isRequired,
   goal: PropTypes.string.isRequired,
-  coffee: PropTypes.object.isRequired,
+  // coffee: PropTypes.object.isRequired,
   // roast: PropTypes.string.isRequired,
   // milk: PropTypes.string.isRequired,
   // sugar: PropTypes.string.isRequired
