@@ -8,8 +8,10 @@ export default function CharacterList() {
 
   useEffect(() => {
     getCharacters()
-      .then((newCharacters) => setCharacters(newCharacters))
-      .then(setLoading(false));
+      .then((newCharacters) => {
+        setCharacters(newCharacters);
+        setLoading(false);
+      });
   }, []);
 
   console.log(characters);
