@@ -19,8 +19,8 @@ export default function CharacterList() {
 
   const characterElements = characters.map(character => (
     <li key={character.id}>
-      {character.name}
-      {/* <Character {...character} /> */}
+      {/* {character.name} */}
+      <Character {...character} />
     </li>
   ));
 

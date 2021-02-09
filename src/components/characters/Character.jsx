@@ -1,16 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Character() {
+export default function Character({ name }) {
   return (
     <div>
-      Character
-      <ul>
-        <li>
-          {characters.map(character => {
-            <li>{character.name}</li>;
-          })}
-        </li>
-      </ul>
+      {name}
     </div>
   );
 }
+
+Character.propTypes = {
+  name: PropTypes.string.isRequired
+};
